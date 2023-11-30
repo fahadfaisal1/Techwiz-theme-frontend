@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Techwize Theme</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/style.css">
+    <script  src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+
+    <link rel="icon" href="./images/logo.jpg">
+
+    <script>
+      fetch('./shoesapi.json')
+  .then(response => response.json())
+  .then(json => 
+      {
+          console.log(json)
+
+          for(var i in json)
+          {
+              document.getElementById("content").innerHTML += `<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                      <img src="${json[i].image}" class="card-img-top" alt="">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">${json[i].name}</h5>
+                          <p class="">${json[i].catagory}</p>
+                          <p class="">${json[i].Price}</p>
+                          <a class="btn-details" href="details.html?id=${json[i].id}">details</a>
+                          <button class="btn-discount">${json[i].discount}%</button>
+                      </div>
+                    </div>
+                  </div>`
+
+                  if(json[i].id==4)
+                  {
+                    break;
+                  }
+          }
+      }
+  )
+    </script>
+</head>
+<body>
+
+    <!-- header start -->
+    <header class="container-fluid ">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                      <a class="navbar-brand" href="./index.html">
+                         Alpha <span class="my-text-rd">Shoes</span>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse text-center " id="mynav">
+                        <ul class="navbar-nav ms-auto me-5">
+                          <li class="nav-item me-2">
+                            <a class="nav-link active" href="./index.html">Home</a>
+                          </li>
+                          <li class="nav-item me-2">
+                            <a class="nav-link" href="./about.html">About</a>
+                          </li>
+                          <li class="nav-item me-2">
+                            <a class="nav-link" href="./services.html">Servies</a>
+                          </li>
+                          <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle" href="#" >
+                              Shoes 
+                            </a>
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="./male.html">Male</a></li>
+                              <li><a class="dropdown-item" href="./female.html">Female</a></li>
+                              <li><a class="dropdown-item" href="./allproducts.html">All Collection</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item me-2">
+                            <a class="nav-link" href="./gallery.html">gallery</a>
+                          </li>
+                          <li class="nav-item me-2">
+                            <a class="nav-link" href="./contact.html">contact</a>
+                          </li>
+                          <li class="nav-item dropdown me-2">
+                            <a class="nav-link" href="#" >
+                                <i class='fa-solid fa-circle-half-stroke'></i>
+                            </a>
+                            <ul class="settings">
+                                <li>
+                                  <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="theme">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Dark</label>
+                                  </div>
+                                </li>
+                            </ul>
+                            
+                          </li>
+                        </ul>
+                      </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- offers start -->
+    <section class="container-fluid some-sections">
+        <div class="row" >
+            <div class="col-11 mx-auto" id="offers">
+                <div class="row gy-2">
+                    <div class="col-12 col-md-6"  >
+                        <h4>
+                        Enjoy the Hot <br>
+                        <span class="my-text-rd">sumer</span>
+                        <span class="my-text-bl">sales</span>
+                        </h4>
+                        <p>
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <span class="my-text-rd">there live the blind  texts</span>. Separated they live in Bookmarksgrove .</p>
+                        </p>
+                        <button class="btn-offer" type="submit">Check out sles</button>
+                    </div>
+                    <div class="col-12 col-md-6" >
+                        <img src="./images/bgshoes.png" class="img-fluid"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- new  Aravials   -->
+
+    <section class="container-fluid" >
+        <div class="row" id="newitems">
+            <div class="col-11 mx-auto">
+                <h4 class="text-center my-text-bl">New Arrivals</h4>
+  
+                <div class="row gy-2 mt-5" id="content">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new  Aravials   -->
+
+    <section class="container-fluid some-sections">
+        <div class="row">
+            <div class="col-11 mx-auto" >
+                <div class="row gy-5" id="whyus">
+                    <div class="col-12 col-md-4">
+                        <div class="mycontent">
+                            <h1>Why chose <br> Alpha </h1>
+                            <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit perspiciatis minima sint voluptate provident eveniet qui fugit cupiditate quasi facilis voluptatibus cum corrupti, rerum quae eius expedita et? Nobis, temporibus?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis eos officiis maiores ut tenetur doloribus in, aliquid, fuga consequatur facilis iusto aliquam magni dicta reiciendis. Quasi corporis maiores rem suscipit?
+                            </p>
+                            <button class="btn-content">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="row gy-5 mt-2">
+                            <div class="col-12 col-lg-4">
+                            <div class="mycard shadow">
+                                <div class="round d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-shoe-prints"></i>
+                                </div>
+                                <p class="text-center mt-3">
+                                    Corporis voluptates officia eiusmod
+                                </p>
+
+                                <p class="text-center mt-1 text-muted">
+                                    Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquiplaboris nisi ut aliquip
+                                </p>
+                            </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                            <div class="mycard shadow">
+                                <div class="round d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-gem"></i>
+                                </div>
+                                <p class="text-center mt-3">
+                                    Corporis voluptates officia eiusmod
+                                </p>
+
+                                <p class="text-center mt-1 text-muted">
+                                    Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquiplaboris nisi ut aliquip
+                                </p>
+                            </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                            <div class="mycard shadow">
+                                <div class="round  d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <p class="text-center mt-3">
+                                    Corporis voluptates officia eiusmod
+                                </p>
+
+                                <p class="text-center mt-1 text-muted">
+                                    Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquiplaboris nisi ut aliquip
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- fix parallex   -->
+    <section class="container-fluid" id="fixed">
+       
+    </section>
+
+  
+    <!-- carosel start -->
+
+    <section class="container-fluid bg-sections">
+        <div class="row" id="userreview">
+          <div class="col-11 mx-auto">
+            <h2 class="text-center mb-5">what are the saying <span class="my-text-rd">About us</span></h2>
+            <div id="next" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#next" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#next" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#next" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-10 mx-auto" >
+                        <div class="row">
+                            <div class="col-12 col-md-9" >
+                              <p>
+                                <span class="my-text">"</span>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis corporis laborum, doloribus quo esse aliquid quisquam ipsa sequi error nostrum quam mollitia. Perspiciatis aspernatur provident delectus corporis aliquid reprehenderit consectetur.
+                                <span class="my-text">"</span>
+                              </p>
+                              <h4 class="ps-5   my-text" >Marvell </h4>
+                              <span class="ps-5 d-block text-muted">Co Fonder Abc</span>
+                              <i class="ps-5 fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                            </div>
+                            <div class="col-12 col-md-3">
+                              <img src="./images/user1.jpg"  alt="">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-10 mx-auto">
+                        <div class="row">
+                            <div class="col-12 col-md-9" >
+                              <p>
+                                <span class="my-text">"</span>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis corporis laborum, doloribus quo esse aliquid quisquam ipsa sequi error nostrum quam mollitia. Perspiciatis aspernatur provident delectus corporis aliquid reprehenderit consectetur.
+                                <span class="my-text">"</span>
+                              </p>
+                              <h4 class="ps-5   my-text">Mexell </h4>
+                              <span class="ps-5 d-block text-muted">Co Fonder Abc</span>
+                              <i class="ps-5 fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                            </div>
+                            <div class="col-12 col-md-3">
+                              <img src="./images/user2.jpg"  alt="">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-10 mx-auto">
+                        <div class="row">
+                            <div class="col-12 col-md-9" >
+                              <p>
+                                <span class="my-text">"</span>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis corporis laborum, doloribus quo esse aliquid quisquam ipsa sequi error nostrum quam mollitia. Perspiciatis aspernatur provident delectus corporis aliquid reprehenderit consectetur.
+                                <span class="my-text">"</span>
+                              </p>
+                              <h4 class="ps-5   my-text">Ramzan </h4>
+                              <span class="ps-5 d-block text-muted">Co Fonder Abc</span>
+                              <i class="ps-5 fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star my-text-bl"></i>
+                              <i class=" fa fa-star "></i>
+                            </div>
+                            <div class="col-12 col-md-3">
+                              <img src="./images/user3.jpg" alt="">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- footer-start -->
+     <footer class="container-fluid bg-dark">
+        <div class="row" id="footer">
+          <div class="col-11 mx-auto">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-10">
+                        <b style="font-size:16px">Address</b>
+                        <p class="mt-3">
+                          Progressive Center,  suite # 202-203, 30-A Shahrah-e-Faisal, Karachi, 75400
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-10">
+                        <b style="font-size:16px">Reservations</b>
+                        <p class="mt-3">
+                          <b>phone</b>: (021) 34385418 <br>
+                          <b>Email</b>: info@example.com
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-clock" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-10">
+                        <b style="font-size:16px">Opening Hours</b>
+                        <p class="mt-3">
+                          <b>Mon-Sat: 9AM </b> - 9PM,<br>
+                          Sunday: Closed
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <b class="d-block" style="font-size:16px">Follow us</b>
+                  <div class="d-flex mt-2 ">
+                    <div class="footerround d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="footerround d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="footerround d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fa-instagram-square"></i>
+                    </div>
+                    <div class="footerround d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="copyright">
+                &copy; Copyright <b>Aptech ShahRah-E-fasial</b>. All Right Resevred <br>
+                Desinged By <a href="">Yasir Arfat</a>
+              </p>
+          </div>
+          
+
+        </div>
+    </footer>
+
+
+    <script src="./bootstrap/js/darkmood.js"></script>
+    
+
+</body>
+</html>

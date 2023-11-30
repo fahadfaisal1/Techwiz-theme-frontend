@@ -1,0 +1,733 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: white;
+}
+
+/* ..............................header start..................................... */
+.my-text-rd
+{
+    color: #e91a20;
+}
+header{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+.navbar-brand{
+    font-weight: 600 !important;
+    font-style: italic;
+    font-size: 20px;
+    color: #145192!important;
+}
+.nav-link{
+    font-weight: 600 !important;
+    font-size: 16px;
+    color: #fff !important;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background-color:#e91a20;
+    transition: all 0.6s;
+    
+}
+.nav-link.active,.nav-link:hover{
+    color: #e91a20 !important;
+}
+
+.nav-link.active::before{
+    
+    width: 100%;
+}
+.nav-link:hover::before
+{
+    width: 100%;
+}
+
+.dropdown-menu{
+    border: none;
+    background-color: #000 !important;
+    font-weight: 600 !important;
+    box-shadow: 0px 5px 10px 1px #145192;
+}
+.dropdown-item{
+    font-weight: 600 !important;
+    color: white;
+}
+
+.dropdown-item:hover{
+    background-color: #145192;
+    color: #000;
+} 
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.settings{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 5px 10px 1px rgba(128, 128, 128, 0.4);
+    padding:  15px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+.dropdown:hover .settings{
+    display: block;
+}
+.navbar-toggler-icon,.navbar-toggler{
+   
+    background-color: #145192 !important;
+}
+@media   (max-width: 992px) and (min-width: 0px) {
+    .nav-link:hover::before
+    {
+        width: 0%;
+    }
+    .nav-link.active::before{
+    
+        width: 0%;
+    }
+    .settings{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* ..............................footer start..................................... */
+
+.some-sections{
+    background-color: #000;
+}
+
+#offers{
+    padding: 50px 0px 50px 0px;
+}
+
+#offers h4{
+    margin-top: 40px;
+    font-size: 60px;
+    font-family:cursive;
+    color: #fff;
+    font-weight: bold;
+}
+#offers p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.my-text-bl{
+    color: #145192;
+}
+
+.btn-offer{
+    background-color: #145192;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s;
+
+}
+.btn-offer:hover{
+    background-color: #145192e7;
+    box-shadow: 0px 3px 10px 1px #145192e7;
+   
+
+}
+
+
+/*................................new Arriav;............... */
+
+#newitems{
+    padding: 70px 0px;
+}
+
+#newitems h4{
+    position: relative;
+}
+
+#newitems h4::before{
+    position: absolute;
+    content: '';
+    background-color: #e91a20;
+    width: 170px;
+    height: 4px;
+    bottom: -9px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+#newitems .card{
+    position: relative;
+    border: none;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px 1px #145192 !important;
+    background-color: #000;
+    transition: all 0.5s;
+}
+.card-text{
+    color: #f2f2f2 !important;
+}
+
+
+#newitems .card img{
+    height: 250px;
+    transition: all 0.5s;
+    
+}
+#newitems .card img:hover{
+    transform: scale(1.2) 
+
+}
+#newitems .card  .card-title{
+    z-index: 1000;
+    position: relative;
+}
+#newitems .card .card-text{
+    color: #000 !important;
+}
+.btn-details{
+    background-color: #e91a20;
+    border: 1px solid white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: white;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+.btn-details:hover{
+    background-color: white;
+    color: #145192;
+    border: 1px solid #145192;
+}
+.btn-discount{
+    background-color: #145192;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.5s;
+    padding: 5px 10px;
+    position:absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+/* ................................why start............... */
+
+#whyus{
+    padding: 70px 0px 50px 0px;
+}
+
+#whyus .mycontent{
+    background-color: #145192;
+    padding: 30px;
+    color: white;
+}
+
+#whyus .btn-content{
+    border: 1px solid #145192;
+    padding: 8px 30px ;
+    color: white;
+    display: block;
+    margin: auto;
+    background-color: #e91a20;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+#whyus .btn-content:hover{
+    
+    background-color: white;
+    color: #000;
+    
+   
+}
+
+#whyus .mycard
+{
+    box-shadow: 0px 5px 10px 1px #145192 !important;
+    background-color: #000;
+    transition: all 0.4s;
+    padding: 20px;
+}
+#whyus .mycard:hover
+{
+    transform: scale(1.1);
+}
+#whyus .mycard .round{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+    background-color: #e91a2163;
+}
+.fa-shoe-prints,.fa-gem,.fa-user{
+    font-size: 30px;
+    color: #145192;
+}
+#whyus .mycard p{
+    font-size: 20px;
+
+}
+
+#fixed{
+    background-image: url("../../images/about.jpg");
+    height: 300px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* ................................why start............... */
+
+.carousel-indicators button{
+    background-color: #145192 !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 100% !important;
+    padding-top: 40px;
+}
+
+#userreview{
+    position: relative;
+    padding: 70px 0px;
+}
+#userreview h2{
+    color: #145192;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+.carousel-inner p
+{
+    color: #fff;
+    user-select: none;
+    border-left: 2px solid #eb1e25;
+    padding-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.carousel-inner img{
+    border: 5px solid #145192;
+    border-radius: 100%;
+    width: 200px;
+    padding: 3px;
+    height: 200px;
+}
+
+
+
+/* ..............................footer start..................................... */
+
+
+#footer{
+    padding: 50px 0px;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+.fa-map-marker,.fa-phone,.fa-clock{
+    font-size: 25px;
+}
+.footerround{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid#777;   
+    margin-left: 5px; 
+    transition: all 0.3s;
+}
+.footerround:first-child{
+     
+    margin-left: 0px; 
+}
+.footerround:hover{
+   
+    border: none; 
+    background-color: white;
+    color:#145192; 
+}
+
+.copyright{
+    text-align: center;
+    
+}
+.copyright a{
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+/* ................................about start............... */
+
+#about{
+    padding: 70px 0px;
+}
+.btn-general{
+    padding: 0px 20px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    background-color: #14519279;
+    color: #145192;
+    transition: all 0.3s;
+}
+.btn-general:hover{
+   
+    background-color:  #e91a2183;
+    color: #e91a20;
+}
+#about h2{
+    color: #145192;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+#about p{
+    font-style: italic;
+    color: #fff;
+}
+#about p:last-child{
+    font-style: normal;
+    color: #fff;
+}
+.fa-check-double{
+    color: #eb1e25;
+    font-size: 16px;
+}
+#about ul{
+    list-style: none;
+}
+#about ul li{
+    padding: none;
+}
+.about-img{
+    position: relative;
+}
+
+.about-img div{
+    position: absolute;
+    width: 70%;
+    background-color: #e91a2141;
+    /* margin: auto; */
+    left: 100px;
+    bottom: 50px;
+}
+
+
+/* ................................team start............... */
+#team{
+    padding: 70px 0px;
+}
+#team h2{
+    color: #145192;
+    font-weight: 600;
+    font-size: 45px;
+}
+#team p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.team-img{
+    padding: 5px;
+    border: 7px  solid #000;
+    border-radius: 100%;
+    background-color: white;
+    transition: all 0.4s;
+}
+.team-img:hover{
+    border: 7px  solid #e91a20
+ 
+}
+
+/* ................................testimonals start............... */
+#testimonals{
+    padding: 70px 0px;
+}
+#testimonals h2{
+    font-weight: 600;
+    color: #e91a20;
+    font-size: 45px;
+}
+#testimonals p{
+    color: #999;
+    font-size: 16px;
+}
+
+#testimonals .card  p{
+    color: #fff;
+
+    font-size: 23px;
+}
+#testimonals .card  {
+    background-color: #000;
+    border-radius: 10px;
+    border: 1px solid #145192;
+    transition: all 0.5s;
+}
+#testimonals .card:hover  {
+    border: 1px dotted #e91a20;
+}
+
+#testimonals .card:hover .d-flex img    {
+    border: 3px solid #145192;
+}
+
+#testimonals .card:hover .d-flex b  {
+    color: #145192;
+}
+
+
+#testimonals .card img  {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 3px solid white;
+    transition: all 0.5s;
+}
+
+
+/* ................................servies start............... */
+
+#services{
+    padding: 90px 0px;
+}
+
+#services  h3{
+    color: #e91a20;
+    font-size: 35px;
+    margin-top: 30px !important;
+}
+
+#services p{
+    color: #fff;
+    margin-top: 25px;
+    font-size: 15px;
+    
+}
+
+.btn-work,.btn-contact{
+    padding: 13px 30px;
+    border: 1px solid white;
+    background-color: #145192;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.btn-contact{
+    border:1px solid #145192;
+    background-color: white;
+    color: #145192;
+}
+.btn-contact:hover{
+    border:1px solid white;
+    background-color: #145192;
+    color: white;
+}
+
+.btn-work:hover{
+
+    border:1px solid #145192;
+    background-color: white;
+    color: #145192;
+  
+}
+
+
+/* ................................featueres start............... */
+
+#features{
+    padding: 90px 0px
+}
+
+#features p{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#features .mycard
+{
+    background-color: #000 !important;
+    border: 1px solid  #145192;;
+    background-color: #fff;
+    padding: 15px;
+    transition: all 0.4s;
+}
+#features .mycard:hover
+{
+    background-color: #e91a20 !important;
+    border: none;
+    color: white;
+    transform: translate(10px , 10px);
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.fa-shoe-prints,.fa-gem,.fa-user
+{
+    transition: all 0.5s;
+}
+#features .mycard:hover .fa-shoe-prints{
+    transform: rotate(360deg);
+      color: white;
+}
+#features .mycard:hover .fa-gem{
+    transform: rotate(360deg);
+    color: white;
+}
+#features .mycard:hover .fa-user{
+    transform: rotate(360deg);
+    color: white;
+}  
+
+#features .mycard:hover p
+{
+    color: #fff !important;
+}
+#features .mycard:hover .round
+{
+    background-color: #145192;
+  
+    
+}
+#features .mycard .round{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+    background-color: rgba(218, 112, 214, 0.1);
+}
+
+/* ................................gallery start............... */
+
+#gallery{
+    padding: 50px 0px ;
+}
+#gallery h3{
+   color: #e91a20;
+}
+
+
+.small-vedio-row{
+ 
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #000;
+    border: 1px solid #145192;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 90%;
+}
+.small-vedio{
+ 
+   position: relative;
+}
+.small-vedio video{
+    width: 150px;
+}
+.small-vedio-row p{
+    /* background-color: #000; */
+    margin-left: 10px;
+    color: #fff;
+    line-height: 22px;
+    font-size: 15px;
+}
+.ply-btn{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.vedio-player {
+    position: relative;
+}
+
+.vedio-player video:focus{
+    outline: none;
+}
+
+.cross-btn{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
+#contactdetails .round{
+    width: 50px;
+    height: 50px;
+    background-color: #145192;
+    border-radius: 100%;
+}
+
+#contactdetails .some-sections{
+    box-shadow: 1px 4px 10px 1px #145192;
+}
+
+.fa-location-crosshairs, .fa-envelope,.fa-phone,.fa-clock{
+    font-size: 25px;
+    color: white;
+}
+
+.row .shadow{
+    box-shadow: 0px 1px 6px 1px #145192 !important;
+}
+.form-control,.form-select{
+    background-color: #14519227 !important;
+    color: #777;
+}
+.form-control:focus,.form-select:focus{
+    background-color: #dee3e927;
+    border: 1px solid #e91a20;
+    outline: none;
+}
+#content .card{
+    background-color: #000 !important;
+    color: white !important;
+    border: 1px solid #145192 ;
+
+}
+table, table tr:hover
+{
+    
+    color:  white !important;
+}
+
+
+table tr:hover
+{
+    background-color: rgba(245, 222, 179, 0.315);
+    color:  white !important;
+}
+

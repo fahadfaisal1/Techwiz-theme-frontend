@@ -1,0 +1,315 @@
+[
+    {
+        "id": 1,
+        "brand": "Bata",
+        "name" : "Bata Leather",
+        "catagory": "male",
+        "Price": 5000,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRRWGlgbdic8gKGS-PddglfTPKtx-PCYn8Mg&usqp=CAU",
+        "feedback": {"rating": 4.5 , "count": 400}
+    },
+
+    {
+        "id": 2,
+        "brand": "Indure",
+        "name" : "Indure Leather",
+        "catagory": "male",
+        "Price": 6900,
+        "discount": 15,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4zEx6w8LeC2vDHK5dwkh6Rp8vCLtB8h_7dw&usqp=CAU",
+        "feedback": {"rating": 3.5 , "count": 200}
+    },
+
+    {
+        "id": 3,
+        "brand": "Indure",
+        "name" : "Indure rygzine",
+        "catagory": "male",
+        "Price": 2900,
+        "discount": 5,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNycg69vzY1-pVKckd8agn3xGiqYaLLi6p9w&usqp=CAU",
+        "feedback": {"rating": 4.7 , "count": 100}
+    },
+
+
+    {
+        "id": 4,
+        "brand": "service",
+        "name" : "service Leather",
+        "catagory": "female",
+        "Price": 4900,
+        "discount": 30,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0JvhEoHvA_QYBzsWtg7sRXTrtZj3ogF2Jw&usqp=CAU",
+        "feedback": {"rating": 4.9 , "count": 50}
+    },
+
+    {
+        "id": 5,
+        "brand": "service",
+        "name" : "service ryzine",
+        "catagory": "male",
+        "Price": 2900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4DaDmXozO7ZS0IdywMHkZnOLOWXLHQ4TWQ&usqp=CAU",
+        "feedback": {"rating": 4.9 , "count": 50}
+    },
+
+
+    {
+        "id": 6,
+        "brand": "Bata",
+        "name" : "Bata Sportshoes",
+        "catagory": "male",
+        "Price": 2900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0l4fnUjWjO7k9ObO-i_SyIcTBm3wT8HLm3Q&usqp=CAU",
+        "feedback": {"rating": 1.9 , "count": 30}
+    },
+
+    {
+        "id": 7,
+        "brand": "Bata",
+        "name" : "service Sportshoes",
+        "catagory": "female",
+        "Price": 2900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnyB-AFjQw9vCw5pxvUEKSxmACRrIpM-_oJw&usqp=CAU",
+        "feedback": {"rating": 1.9 , "count": 30}
+    },
+
+
+
+    {
+        "id": 8,
+        "brand": "Indure",
+        "name" : "Indure Sportshoes",
+        "catagory": "male",
+        "Price": 4900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNOxxZhXfVTbCy3hJFC5jZK6iOyscIYHuwrw&usqp=CAU",
+        "feedback": {"rating": 1.9 , "count": 50}
+    },
+
+
+    {
+        "id": 9,
+        "brand": "Indure",
+        "name" : "Indure Sportshoes",
+        "catagory": "female",
+        "Price": 3900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56JXb1sPGpI17PEg0f4cc1i4DA5ON5Ulq0Q&usqp=CAU",
+        "feedback": {"rating": 4.9 , "count": 50}
+    },
+
+
+    {
+        "id": 10,
+        "brand": "service",
+        "name" : "service Sportshoes",
+        "catagory": "both",
+        "Price": 6900,
+        "discount": 30,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbj6xM1wcAPLst6OT0rqTJUwu5xFf8Rq_atA&usqp=CAU",
+        "feedback": {"rating": 4.9 , "count": 50}
+    },
+
+
+    {
+        "id": 11,
+        "brand": "service",
+        "name" : "service males dress shoes",
+        "catagory": "male",
+        "Price": 8900,
+        "discount": 40,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "http://s7d9.scene7.com/is/image/JCPenney/0900631B8174FB95M",
+        "feedback": {"rating": 4.9 , "count": 50}
+    },
+
+
+    {
+        "id": 12,
+        "brand": "bata",
+        "name" : "bata sleeprs",
+        "catagory": "female",
+        "Price": 2900,
+        "discount": 40,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PDc_yLIPTfAC4nzQyIYdxxihlQmY9csg0g&usqp=CAU",
+        "feedback": {"rating": 2.9 , "count": 50}
+    },
+
+
+    {
+        "id": 13,
+        "brand": "service",
+        "name" : "bata sleeprs",
+        "catagory": "both",
+        "Price": 1900,
+        "discount": 0,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHLuOGz-Y0u1UUxGdbuCcWKhhwd3EpCgkYYV828ZwUdxK4vQnL_QhT7szjJOFFPi31V6E&usqp=CAU",
+        "feedback": {"rating": 1.9 , "count": 40}
+    },
+
+
+    {
+        "id": 14,
+        "brand": "Indure",
+        "name" : "Indure sleeprs",
+        "catagory": "male",
+        "Price": 3900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBdHve6V0Sgujo-qAa6CrYIlmF1rQdq-X4zkJpres-OfjqBnK0jsmPpDd_6Ej5VKKLxWQ&usqp=CAU",
+        "feedback": {"rating": 3.9 , "count": 40}
+    },
+
+    
+    {
+        "id": 15,
+        "brand": "bata",
+        "name" : "bata casual",
+        "catagory": "male",
+        "Price": 1900,
+        "discount": 5,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HujjyGZvGtpQXw-KpplLk3mAFH_RcoPiG2uwj2W0ivZXoxK4Dkn3qpZXwzZEoVJhZpI&usqp=CAU",
+        "feedback": {"rating": 1.9 , "count": 10}
+    },
+
+
+    {
+        "id": 16,
+        "brand": "service",
+        "name" : "service casual",
+        "catagory": "male",
+        "Price": 900,
+        "discount": 5,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kV6f1BOq7nZQimNvnldpc1jU4A7MVaXegA&usqp=CAU",
+        "feedback": {"rating": 1.4 , "count": 10}
+    },
+
+
+    {
+        "id": 18,
+        "brand": "Indure",
+        "name" : "Indure casual",
+        "catagory": "male",
+        "Price": 4900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QM3a2rH6CM2ST78bXLfqmkLKPXtXXK9WGDHviM9t0hOiUG7XYK-Tk_-Uvd8nDiRCDEE&usqp=CAU",
+        "feedback": {"rating": 4.4 , "count": 10}
+    },
+
+
+    {
+        "id": 19,
+        "brand": "Indure",
+        "name" : "Indure dress shoes",
+        "catagory": "male",
+        "Price": 9900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPg624KsXXdvGhxZBrh8X5yxFwnzyQTvM6Zg&usqp=CAU",
+        "feedback": {"rating": 5 , "count": 10}
+    },
+
+    {
+        "id": 20,
+        "brand": "Indure",
+        "name" : "Indure dress shoes",
+        "catagory": "male",
+        "Price": 9900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRicuYtdKLZrVvNLOOHoNhpUn5Y-EzJ6DpBDQ&usqp=CAU",
+        "feedback": {"rating": 4.9 , "count": 30}
+    },
+
+    {
+        "id": 21,
+        "brand": "bata",
+        "name" : "bata dress shoes",
+        "catagory": "male",
+        "Price": 7900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY35xfbK6k5xO3bRbYmTwqxVtSRnRSO57GPIWCLcXnbVLLspMWBoTwdsz3NMikvDCR7eU&usqp=CAU",
+        "feedback": {"rating": 4.9 , "count": 30}
+    },
+
+    {
+        "id": 22,
+        "brand": "bata",
+        "name" : "bata stylish shoes",
+        "catagory": "male",
+        "Price": 4900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "images/shoes1.jpg",
+        "feedback": {"rating": 4.9 , "count": 30}
+    },
+
+    {
+        "id": 23,
+        "brand": "service",
+        "name" : "service stylish shoes",
+        "catagory": "male",
+        "Price": 3900,
+        "discount": 5,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "images/shoes2.jpg",
+        "feedback": {"rating": 4.9 , "count": 30}
+    },
+
+    {
+        "id": 24,
+        "brand": "Indure",
+        "name" : "Indure stylish shoes",
+        "catagory": "female",
+        "Price": 4900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "images/shoes3.jpg",
+        "feedback": {"rating": 4.9 , "count": 30}
+    },
+
+    {
+        "id": 25,
+        "brand": "Indure",
+        "name" : "Indure Sportshoes",
+        "catagory": "female",
+        "Price": 2900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "images/shoes4.jpg",
+        "feedback": {"rating": 4.9 , "count": 30}
+    },
+
+    {
+        "id": 26,
+        "brand": "Bata",
+        "name" : "bata sleeprs",
+        "catagory": "female",
+        "Price": 2900,
+        "discount": 10,
+        "discription": "n common usage, randomness is the apparent or actual lack of pattern or predictability in events. A random sequence of events, symbols or steps often has no order and does not follow an i",
+        "image" : "images/banner.png",
+        "feedback": {"rating": 4.9 , "count": 30}
+    }
+]
